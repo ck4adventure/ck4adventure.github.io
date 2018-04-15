@@ -3,7 +3,7 @@ layout: post
 title: Passenger Pickup
 date: 2018-04-10 23:05:00 -0800
 ---
-So by chance I'm in the first car of the Richmond bound BART, we're leaving 19th/Oakland, most of us having just boarded as transfers from the City. It’s about quarter after ten at night, the train is full of people all just trying to get home. I’m reading a book, not really tuned in to much of anything.  I do realize we are going very slow in the tunnel. Slow enough that after a while it’s really noticeable. Slow enough that suddenly we are… stopping?
+By chance I'm in the first car of the Richmond bound BART, we're leaving 19th/Oakland, most of us having just boarded as transfers from the City. It’s about quarter after ten at night, the train is full of people all just trying to get home. I’m reading a book, not really tuned in to much of anything.  I do realize we are going very slow in the tunnel. Slow enough that after a while it’s really noticeable. Slow enough that suddenly we are… stopping?
 
 I turn around to look to the front, curious. Here comes a second engineer from the driver’s compartment, down past the people sitting, all the way to the first door. I figure oh shit, we’re having train trouble. But suddenly he’s opening the door manually, and here is this transient, probably late 40s, with his crap, climbing up into the train car.
 

@@ -47,3 +47,9 @@ ul.posts li {
 ul li span {
   padding: 3px;
 }
+
+ul li p {
+  font-size: 1em;
+  line-height: normal;
+
+}
