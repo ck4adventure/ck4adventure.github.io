@@ -3,7 +3,8 @@ body {
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    /* font-family:'Helvetica', 'Arial', 'Sans-Serif'; */
+    font-family: 'Vollkorn', serif;
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -21,7 +22,7 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Dancing Script', cursive;
     color: #3F0263;
 }
 p {
@@ -41,4 +42,8 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+ul li span {
+  padding: 3px;
 }
