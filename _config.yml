@@ -18,16 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Christina Kiesz - UX Engineer
+email: ckiesz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I believe that products shouldn't be hard to use. A good interface is more than just putting buttons on the page, it is about knowing exactly what the customer is trying to do, even when they don't quite know it themselves.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: ck4adventure
+github_username:  ck4adventure
 
 # Build settings
 theme: minima
