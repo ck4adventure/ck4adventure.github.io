@@ -84,7 +84,7 @@ Models as object oriented ways to interact
 cat.rb to model the cats table
 
 class Cat (class and file name should be same, but different case)
-class Cat < ActiveRecord
+class Cat < ApplicationRecord
 
 end
 
@@ -98,3 +98,12 @@ c.save
 
 read cat from the db
 Cat.first
+
+#### annotate gem
+add to development group
+gem 'annotate'
+
+then `bundle install`
+
+then, as long as your model files exist with the class skels
+`bundle exec annotate --models`
