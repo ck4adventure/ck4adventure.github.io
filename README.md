@@ -57,3 +57,9 @@ Download postgresapp and run
 ## Yarn
 `brew install yarn`
 
+# Random Toolsets
+
+## Jekyll
+`brew install jekyll`
+
+## Gatsby

@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Rails MVC Crib Notes"
+date:   2020-04-10 17:04:08 -0700
+categories: rails notes model view controller
+---
+
+Now that we have objects in our database and have written validations to make sure we can save them successfully for each create and update, it's time to write the rails backend to hook into that.
+
+## Set basic routes
+
+`/config/routes.rb`
+
+`resources :users`
+
+Which creates the following:
+
+```ruby
+get '/users', to: 'users#index', as: 'users'
+post '/users', to: 'users#create'
+get '/users/new', to: 'users#new', as: 'new_user'
+get '/users/:id/edit', to: 'users#edit', as: 'edit_user'
+get '/users/:id', to: 'users#show', as: 'user'
+patch '/users/:id', to: 'users#update'
+put '/users/:id', to: 'users#update'
+delete '/user/:id', to: 'users#destroy'
+```
+
+## Create some Models
+
+Each resource will need to have a controller to handle each of the resource actions listed above.
+
+So the `users_controller.rb` should have at the minimum each of the actions above such as `#index`, `#update`, `#destroy`, etc. The controller receives the params from the path, query and body of the incoming http request and is responsible for parsing it and making any queries on the database.
+
+Once those queries are answered, a response is returned along with any other data that controller chooses to pass along back, formatted appropriately through a view.
+
+## Testing with Postman
+
+Make sure to disable the csrf protection for development only.
+`/config/application.rb`
+
+Paste in the following with the other config loadings
+`config.action_controller.default_protect_from_forgery = false`
+
+Make sure to at least return plain text in any `controller#action` that you want to test else it errors out.
+
+## Write some Views
