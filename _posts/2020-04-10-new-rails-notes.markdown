@@ -6,7 +6,7 @@ categories: rails how-to notes
 ---
 
 ## New Rails Project
-`rails new <name> --database=<db>`
+`rails new <name> --database=<db>` OR  
 `rails new <name> -d <db>`
 
 Using `postgresql` (Apr 7, 2020)
@@ -15,10 +15,28 @@ Using `postgresql` (Apr 7, 2020)
 
 ## Add Addtl Tools to Gemfile
 gemfile - best practice is to set specific versions only
-`pry-rails` - is what gives us rails console
-add into file
 
-then
+```ru
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-rails'
+end
+```
+```ru
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+end
+```
+```ru
+group :test do
+  gem 'faker'
+  gem 'guard-rspec'
+  gem 'launchy'
+end
+```
+
 `bundle install` to update the gemfile lock
 
 ## Tour the App Structure
@@ -38,7 +56,7 @@ seeds.rb
 holds the test data
 
 `/lib`
-holds any classes me made internally
+holds any classes made internally
 
 `/public`
 404 pages
