@@ -21,10 +21,10 @@
 title: Christina Kiesz - UX Engineer
 email: ckiesz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I believe that products shouldn't be hard to use. A good interface is more than just putting buttons on the page, it is about knowing exactly what the customer is trying to do, even when they don't quite know it themselves.
+  Full Stack Dev: Rails/React; loves UX
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ck4adventure
+twitter_username: 
 github_username:  ck4adventure
 
 # Build settings
