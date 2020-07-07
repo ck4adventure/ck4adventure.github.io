@@ -10,32 +10,41 @@ permalink: /new-project/
 
 Using `postgresql` (Apr 7, 2020)
 
-## Add Addtl Tools to Gemfile
+## Add Testing and Debugging Gems
+
+### Update the Gemfile
 gemfile - best practice is to set specific versions only
 
 ```ru
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'pry-rails'
   gem 'annotate'
 end
 ```
 ```ru
 group :development, :test do
   gem 'rspec-rails'
+  gem 'pry-rails'
   gem 'factory_bot_rails'
+  gem 'faker'
 end
 ```
 ```ru
 group :test do
-  gem 'faker'
   gem 'guard-rspec'
   gem 'launchy'
+  gem 'shoulda-matchers'
 end
 ```
 
-then `bundle install`
+### Install new gems
+Run `bundle install`
+
+
+### Install rspec testing
+Run `rails g rspec:install`
+
 
 ## Tour the App Structure
 `/app`
