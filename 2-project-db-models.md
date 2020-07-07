@@ -4,10 +4,13 @@ title: DB and Models
 permalink: /rails-models/
 ---
 ## Migrations
-Rails writes our sql tables for us
+Rails writes our sql tables for us  
 record of the changes of the db
 
-`rails generate migration CreateObjectTable` - somewhat semantic what you did, to read it, but isn't critical, ruby will try to read it though
+`rails generate migration CreateObjectTable` 
+
+- try to use a semantic naming, rails will try to parse
+- migrations will create a table if nonexistent
 
 creates a .rb file with a timestamp, snakecased
 ```ru
