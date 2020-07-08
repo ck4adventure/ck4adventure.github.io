@@ -19,22 +19,22 @@ gemfile - best practice is to set specific versions only
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'annotate'
+  gem 'annotate' # `annotate --models` for schema luv
 end
 ```
 ```ru
 group :development, :test do
-  gem 'rspec-rails'
-  gem 'pry-rails'
+  gem 'rspec-rails' # rspec testing, incls core, etc `rails g install:rspec`
+  gem 'pry-rails' # pry instead of irb
   gem 'factory_bot_rails'
   gem 'faker'
 end
 ```
 ```ru
 group :test do
-  gem 'guard-rspec'
-  gem 'launchy'
-  gem 'shoulda-matchers'
+  gem 'guard-rspec' # hot rspec testing
+  gem 'launchy' # `Launchy.open(url)`
+  gem 'shoulda-matchers' # enables one-liner syntax
 end
 ```
 
