@@ -82,3 +82,7 @@ Make sure it's up and running
 ### Create the project db
 Doing this first can help make sure no errors and connected
 `rails db:create`
+
+
+#### TADA! You now have a working rails app with database!
+
