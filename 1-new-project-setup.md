@@ -7,7 +7,9 @@ permalink: /new-project/
 ## New Rails Project
 `rails new <name> --database=<db>`
 
+
 `rails new <name> -d <db>`
+
 
 Using `postgresql` (Apr 7, 2020)
 
