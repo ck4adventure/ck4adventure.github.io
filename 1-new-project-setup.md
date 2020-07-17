@@ -6,6 +6,7 @@ permalink: /new-project/
 
 ## New Rails Project
 `rails new <name> --database=<db>`
+
 `rails new <name> -d <db>`
 
 Using `postgresql` (Apr 7, 2020)
@@ -17,24 +18,34 @@ gemfile - best practice is to set specific versions only
 
 ```ru
 group :development do
+  # personal dev gems
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'annotate' # `annotate --models` for schema luv
+  # `annotate --models` for schema luv
+  gem 'annotate' 
 end
 ```
 ```ru
 group :development, :test do
-  gem 'rspec-rails' # rspec testing, incls core, etc `rails g install:rspec`
-  gem 'pry-rails' # pry instead of irb
+  # personal dev gems
+  # rspec testing, incls core, etc `rails g install:rspec`
+  gem 'rspec-rails' 
+  # pry instead of irb
+  gem 'pry-rails' 
+  # seed and test data generation
   gem 'factory_bot_rails'
   gem 'faker'
 end
 ```
 ```ru
 group :test do
-  gem 'guard-rspec' # hot rspec testing
-  gem 'launchy' # `Launchy.open(url)`
-  gem 'shoulda-matchers' # enables one-liner syntax
+  # personal dev gems
+  # hot rspec testing
+  gem 'guard-rspec' 
+  # `Launchy.open(url)`
+  gem 'launchy' 
+  # enables one-liner syntax
+  gem 'shoulda-matchers' 
 end
 ```
 
