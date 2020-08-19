@@ -61,10 +61,6 @@ end
 
 Run `bundle install`
 
-### Install rspec testing
-
-Run `rails g rspec:install`
-
 ### Configure Auto-Generation of RSpecs
 
 Add inside the Application Class in the file '<app>/config/application.rb'
@@ -72,12 +68,25 @@ Add inside the Application Class in the file '<app>/config/application.rb'
 ```ru
 config.generators do |g|
   g.test_framework :rspec,
-    :fixtures => false,
+    :fixtures => true,
     :view_specs => false,
     :helper_specs => false,
     :routing_specs => false,
     :controller_specs => true,
     :request_specs => false
+end
+```
+
+### Install Shoulda Matchers
+
+Place this at the bottom of `test/test_helper.rb`:
+
+```ru
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :minitest
+    with.library :rails
+  end
 end
 ```
 
@@ -99,7 +108,7 @@ seeds.rb
 holds the test data
 
 `/lib`
-holds any classes made internally
+holds any classes/files made internally
 
 `/public`
 404 pages
@@ -107,6 +116,10 @@ custom html stuff
 
 `/spec`
 testing files go here
+
+- '/spec/factories' Factory Bot files
+- '/spec/models' RSpec model tests
+- '/spec/controllers' RSpec controller tests
 
 `/vendor`
 js files and libraries from external sources
@@ -122,4 +135,6 @@ Make sure it's up and running
 Doing this first can help make sure no errors and connected
 `rails db:create`
 
-#### TADA! You now have a working rails app with database!
+### Install rspec testing
+
+Run `rails g rspec:install`
