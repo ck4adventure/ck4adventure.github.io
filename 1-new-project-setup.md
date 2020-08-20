@@ -12,11 +12,9 @@ permalink: /new-project/
 
 Using `postgresql` (Apr 7, 2020)
 
-## Add Testing and Debugging Gems
+## Add BDD and testing gems
 
 ### Update the Gemfile
-
-gemfile - best practice is to set specific versions only
 
 ```ru
 group :development do
@@ -54,6 +52,10 @@ group :test do
   gem 'shoulda-matchers'
   # faker data to work with factory bot
   gem 'faker'
+  # cucumber for end to end testing
+  gem 'cucumber-rails', require: false
+  # database cleaner to keep it squeakin
+  gem 'database_cleaner'
 end
 ```
 
@@ -90,40 +92,6 @@ Shoulda::Matchers.configure do |config|
 end
 ```
 
-## Tour the App Structure
-
-`/app`
-model is the class that represents the table of the db
-controller handles the data coming, accesing the models, and then the views to provide a response
-view is a template for the data to be presented for return
-
-`/config`
-database.yml
-specifies which db and how it connects
-routes.rb
-defines what http routes are avail and which controllers to create and trigger actions on
-
-`/db`
-seeds.rb
-holds the test data
-
-`/lib`
-holds any classes/files made internally
-
-`/public`
-404 pages
-custom html stuff
-
-`/spec`
-testing files go here
-
-- '/spec/factories' Factory Bot files
-- '/spec/models' RSpec model tests
-- '/spec/controllers' RSpec controller tests
-
-`/vendor`
-js files and libraries from external sources
-
 ## Setup DB
 
 ### Postgresql
@@ -138,3 +106,7 @@ Doing this first can help make sure no errors and connected
 ### Install rspec testing
 
 Run `rails g rspec:install`
+
+### Install cucumber bdd
+
+Run `rails g cucumber:install`

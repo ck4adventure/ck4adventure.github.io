@@ -4,15 +4,51 @@ title: Rails DB
 permalink: /rails-models/
 ---
 
+## Tour the App Structure
+
+`/app`
+model is the class that represents the table of the db
+controller handles the data coming, accesing the models, and then the views to provide a response
+view is a template for the data to be presented for return
+
+`/config`
+database.yml
+specifies which db and how it connects
+routes.rb
+defines what http routes are avail and which controllers to create and trigger actions on
+
+`/db`
+seeds.rb
+holds the test data
+
+`/lib`
+holds any classes/files made internally
+
+`/public`
+404 pages
+custom html stuff
+
+`/spec`
+testing files go here
+
+- '/spec/factories' Factory Bot files
+- '/spec/models' RSpec model tests
+- '/spec/controllers' RSpec controller tests
+
+`/vendor`
+js files and libraries from external sources
+
 ## Models and Migrations
+
 Rails writes our sql tables for us using ActiveRecord. It also keeps a record of the changes of the db through migrations.
 
-`rails generate migration CreateUsers` 
+`rails generate migration CreateUsers`
 
 - try to use a semantic naming, rails will try to parse
 - migrations will create a table if nonexistent
 
 creates a .rb file with a timestamp, snakecased
+
 ```ru
 # /db/migrate/20200701_create_users.rb
 def change
@@ -43,8 +79,8 @@ don't rollback in production, only forward edits, like git has to
 to add a column, within the change code of a migration:
 `add_column :cats, :color, :string`
 
-
 ## Using Models to interact with the db
+
 Models as object oriented ways to interact
 cat.rb to model the cats table
 
@@ -67,10 +103,12 @@ read cat from the db
 `Cat.first`
 
 ### Annotate Gem
+
 as long as your model files exist with the class skels
 `bundle exec annotate --models` (--routes, --controllers, etc)
 
 ## Write basic macros for associations
+
 instead of writing out queries, belongs_to and has_many and others are boilerplate ensure functions and checks
 
 ```ru
@@ -80,14 +118,17 @@ belongs_to :model, {
   class_name: 'Class'
 }
 ```
+
 ## Complex Asociations
 
 double
+
 ```ru
 has_many :things
   through: <an association>
   source: <method on the association you're accessing that returns the things>
 ```
+
 returns an array
 
 ```ru
@@ -95,4 +136,5 @@ has_one :thing
   through: <name of some association>
   source: <method on there that gets you the rest of the way to the thing>
 ```
+
 returns single object, uses LIMIT 1
