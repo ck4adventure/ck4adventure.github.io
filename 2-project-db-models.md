@@ -21,6 +21,14 @@ defines what http routes are avail and which controllers to create and trigger a
 seeds.rb
 holds the test data
 
+`/features`
+holds cucumber bdd feature files and their steps
+
+- A cucumber file is named `<feature_desc>.feature` and lives at the top level
+
+- `/features/step_definitions` holds the steps to be tested
+- `/features/support` holds support files like the env
+
 `/lib`
 holds any classes/files made internally
 
