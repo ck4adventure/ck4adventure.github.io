@@ -5,8 +5,9 @@
 layout: home
 ---
 
-I am a \_human
+I am a\_
 
+      \_human
       \_nature_girl
       \_green_thumb
       \_decadent_cook
