@@ -45,3 +45,63 @@ Paste in the following with the other config loadings
 Make sure to at least return plain text in any `controller#action` that you want to test else it errors out.
 
 ## Write some Views
+
+## Using Models to interact with the db
+
+Models as object oriented ways to interact
+cat.rb to model the cats table
+
+```ru
+class Cat (class and file name should be same, but different case)
+class Cat < ApplicationRecord
+
+end
+```
+
+`rails c`
+
+able to call the cat class
+`c = Cat.new`
+makes a local instance in the rails console without saving to db until you ask for save
+`c.name = "Sarah"`
+`c.save`
+
+read cat from the db
+`Cat.first`
+
+### Annotate Gem
+
+as long as your model files exist with the class skels
+`bundle exec annotate --models` (--routes, --controllers, etc)
+
+## Write basic macros for associations
+
+instead of writing out queries, belongs_to and has_many and others are boilerplate ensure functions and checks
+
+```ru
+belongs_to :model, {
+  primary_key: :id,
+  foreign_key: :other_id,
+  class_name: 'Class'
+}
+```
+
+## Complex Asociations
+
+double
+
+```ru
+has_many :things
+  through: <an association>
+  source: <method on the association you're accessing that returns the things>
+```
+
+returns an array
+
+```ru
+has_one :thing
+  through: <name of some association>
+  source: <method on there that gets you the rest of the way to the thing>
+```
+
+returns single object, uses LIMIT 1
