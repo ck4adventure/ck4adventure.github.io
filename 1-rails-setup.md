@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rails Setup
-permalink: /new-project/
+permalink: /new-rails/
 ---
 
 ## New Rails Project
