@@ -94,7 +94,7 @@ end
 
 ### Install Shoulda Matchers
 
-Place this at the bottom of `test/test_helper.rb`:
+Place this at the bottom of `spec/rails_helper.rb`:
 
 ```ru
 Shoulda::Matchers.configure do |config|
