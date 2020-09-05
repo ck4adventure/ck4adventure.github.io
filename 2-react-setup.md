@@ -4,7 +4,7 @@ title: React Setup
 permalink: /new-react/
 ---
 
-## Frontend Only React
+## React Framework on top of Rails Backend
 
 ### Init a package file
 Add a package file to your project, `--y` will set minimal defaults.
@@ -34,7 +34,7 @@ In the `package.json` file add the webpack line to the scripts section.
 In the root directory of the project, add a file `webpack.config.js` with these contents.
 
 ```bash
-code webpack.config.js
+touch webpack.config.js
 ```
 
 ```js
@@ -44,7 +44,7 @@ module.exports = {
   context: __dirname,
   entry: './frontend/entry.jsx',
   output: {
-    path: path.resolve(__dirname, 'app'),
+    path: path.resolve(__dirname, 'app', 'assets', 'javascripts'),
     filename: 'bundle.js'
   },
   resolve: {

@@ -17,16 +17,6 @@ Using `postgresql` (Apr 7, 2020)
 ### Update the Gemfile
 
 ```ru
-group :development do
-  # personal dev gems
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  # `annotate --models` for schema luv
-  gem 'annotate'
-end
-```
-
-```ru
 group :development, :test do
   # personal dev gems
   # rspec testing, incls core, etc `rails g install:rspec`
@@ -36,6 +26,16 @@ group :development, :test do
   # seed and test data generation
   gem 'factory_bot_rails'
 
+end
+```
+
+```ru
+group :development do
+  # personal dev gems
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  # `annotate --models` for schema luv
+  gem 'annotate'
 end
 ```
 
