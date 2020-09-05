@@ -6,9 +6,22 @@ permalink: /new-rails/
 
 ## New Rails Project
 
+### Traditional App w/ Views
 `rails new <name> --database=<db>`
 
-`rails new <name> -d <db>`
+### PG / Rails 6 / RSpec / React
+
+#### Set db to postgres 
+`-d=postgresql`
+
+#### Skip default testing 
+`-T` 
+
+#### Preconfigure for React
+`--webpack=react`
+
+#### Skip the coffee script scss
+`--skip-coffee`
 
 Using `postgresql` (Apr 7, 2020)
 
