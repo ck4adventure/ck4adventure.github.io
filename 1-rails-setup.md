@@ -92,19 +92,6 @@ config.generators do |g|
 end
 ```
 
-### Install Shoulda Matchers
-
-Place this at the bottom of `spec/rails_helper.rb`:
-
-```ru
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :minitest
-    with.library :rails
-  end
-end
-```
-
 ## Setup DB
 
 ### Postgresql
@@ -119,6 +106,19 @@ Doing this first can help make sure no errors and connected
 ### Install rspec testing
 
 Run `rails g rspec:install`
+
+### Install Shoulda Matchers
+
+Place this at the bottom of `spec/rails_helper.rb`:
+
+```ru
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :minitest
+    with.library :rails
+  end
+end
+```
 
 ### Install cucumber bdd
 
