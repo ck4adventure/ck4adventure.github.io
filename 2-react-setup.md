@@ -6,6 +6,10 @@ permalink: /new-react/
 
 ## React Framework on top of Rails Backend
 
+## Check your Node version
+Some webpacker packages seem to be unable to upgrade on node
+Currently running Node 8.9.4 for Rails 5.2.3
+
 ### Init a package file
 Add a package file to your project, `--y` will set minimal defaults.
 

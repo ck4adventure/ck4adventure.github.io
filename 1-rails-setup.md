@@ -69,39 +69,14 @@ group :test do
   gem 'cucumber-rails', require: false
   # database cleaner to keep it squeakin
   gem 'database_cleaner'
+  # if going old school RoR controller testing
+  gem 'rails-controller-testing'
 end
 ```
 
 ### Install new gems
 
 Run `bundle install`
-
-### Configure Auto-Generation of RSpecs
-
-Add inside the Application Class in the file '<app>/config/application.rb'
-
-```ru
-config.generators do |g|
-  g.test_framework :rspec,
-    :fixtures => true,
-    :view_specs => false,
-    :helper_specs => false,
-    :routing_specs => false,
-    :controller_specs => true,
-    :request_specs => false
-end
-```
-
-## Setup DB
-
-### Postgresql
-
-Make sure it's up and running
-
-### Create the project db
-
-Doing this first can help make sure no errors and connected
-`rails db:create`
 
 ### Install rspec testing
 
@@ -123,3 +98,18 @@ end
 ### Install cucumber bdd
 
 Run `rails g cucumber:install`
+
+### Install annotate gem
+This will set annotate to run automatically and with nicer data
+Run `rails g annotate:install`
+
+## Setup DB
+
+### Postgresql
+
+Make sure it's up and running
+
+### Create the project db
+
+Doing this first can help make sure no errors and connected
+`rails db:create`
