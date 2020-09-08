@@ -68,7 +68,7 @@ group :test do
   # cucumber for end to end testing
   gem 'cucumber-rails', require: false
   # database cleaner to keep it squeakin
-  gem 'database_cleaner'
+  gem 'database_cleaner-active_record'
   # if going old school RoR controller testing
   gem 'rails-controller-testing'
 end
@@ -114,6 +114,28 @@ end
 
 NB: Or you can paste the whole thing in the bottom of the `rails_helper.rb` ala shoulda-matchers config.
 
+### Configure Database Cleaner
+Require the database cleaner in your `rails_helper.rb`, probably near where you require rspec at the top.
+
+`require 'database_cleaner/active_record'`
+
+Then, inside the config section:
+
+```ru
+RSpec.configure do |config|
+  # ... add this section somewhere in your config
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.clean_with(:truncation)
+  end
+
+  config.around(:each) do |example|
+    DatabaseCleaner.cleaning do
+      example.run
+    end
+  end
+end
+```
 
 ## Setup DB
 
