@@ -103,6 +103,18 @@ Run `rails g cucumber:install`
 This will set annotate to run automatically and with nicer data
 Run `rails g annotate:install`
 
+### Configure Factory Bot Rails
+If you're using Rails, add the following configuration to `spec/support/factory_bot.rb` and be sure to require that file in `rails_helper.rb`:
+
+```ru
+RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+end
+```
+
+NB: Or you can paste the whole thing in the bottom of the `rails_helper.rb` ala shoulda-matchers config.
+
+
 ## Setup DB
 
 ### Postgresql
