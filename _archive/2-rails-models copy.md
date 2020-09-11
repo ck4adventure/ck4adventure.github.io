@@ -4,8 +4,6 @@ title: Rails Models
 permalink: /rails-models/
 ---
 
-
-
 ## Models and Migrations
 
 Rails writes our sql tables for us using ActiveRecord. It also keeps a record of the changes of the db through migrations.
