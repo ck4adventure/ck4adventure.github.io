@@ -40,6 +40,7 @@ end
 `bundle install` to update the gemfile lock
 
 ## Tour the App Structure
+
 `/app`
 model is the class that represents the table of the db
 controller handles the data coming, accesing the models, and then the views to provide a response
@@ -55,13 +56,27 @@ defines what http routes are avail and which controllers to create and trigger a
 seeds.rb
 holds the test data
 
+`/features`
+holds cucumber bdd feature files and their steps
+
+- A cucumber file is named `<feature_desc>.feature` and lives at the top level
+
+- `/features/step_definitions` holds the steps to be tested
+- `/features/support` holds support files like the env
+
 `/lib`
-holds any classes made internally
+holds any classes/files made internally
 
 `/public`
 404 pages
 custom html stuff
-/test
+
+`/spec`
+testing files go here
+
+- '/spec/factories' Factory Bot files
+- '/spec/models' RSpec model tests
+- '/spec/controllers' RSpec controller tests
 
 `/vendor`
 js files and libraries from external sources
