@@ -7,9 +7,9 @@ layout: home
 
 I am a\_
 
-      \_human
-      \_nature_girl
-      \_green_thumb
-      \_decadent_cook
-      \_captivating_musician
-      \_dedicated_coder
+      _human
+      _nature_girl
+      _green_thumb
+      _decadent_cook
+      _captivating_musician
+      _dedicated_coder

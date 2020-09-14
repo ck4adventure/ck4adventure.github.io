@@ -28,4 +28,7 @@ use `subject { build() }`
 it { should validate_numericality_of(:luck) }
 it { should validate_presence_of(:cheese_effect) }
 it { should define_enum_for(:cheese_effect) }
+it { should validate_uniqueness_of(:mouse_id)
+      .scoped_to(:location_id)
+      .with_message("Mouse already saved to this location") }
 ```
