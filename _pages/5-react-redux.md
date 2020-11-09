@@ -120,15 +120,19 @@ export default rootReducer;
 
 ## Store
 A store can be very simple, or configured to handle additional needs. Here, allowance is made for an optional preloaded state to be passed in on creation.
+Compose overwrite is to allow redux dev tools, super nice.
 
 ```js
-import { createStore } from 'redux';
+import { applyMiddleware, createStore, compose } from 'redux'
+import thunk from 'redux-thunk'
+import logger from 'redux-logger'
+import rootReducer from '../reducers/root_reducer'
 
-import rootReducer from '../reducers/root_reducer';
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const configureStore = (preloadedState = {}) => {
-  return createStore(rootReducer, preloadedState);
-};
+  return createStore(rootReducer, preloadedState, composeEnhancers(applyMiddleware(thunk, logger)));
+}
 
 export default configureStore;
 ```
