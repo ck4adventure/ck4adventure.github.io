@@ -7,20 +7,25 @@ permalink: /rails-setup/
 ## New Rails Project
 
 ### Traditional App w/ Views
+
 `rails new <name> --database=<db>`
 
-### PG / Rails 6 / RSpec / React
+### Common Options
 
-#### Set db to postgres 
+#### Set db to postgres
+
 `-d=postgresql`
 
-#### Skip default testing 
-`-T` 
+#### Skip default testing
+
+`-T`
 
 #### Preconfigure for React
+
 `--webpack=react`
 
 #### Skip the coffee script scss
+
 `--skip-coffee`
 
 Using `postgresql` (Apr 7, 2020)
@@ -100,10 +105,12 @@ end
 Run `rails g cucumber:install`
 
 ### Install annotate gem
+
 This will set annotate to run automatically and with nicer data
 Run `rails g annotate:install`
 
 ### Configure Factory Bot Rails
+
 If you're using Rails, add the following configuration to `spec/support/factory_bot.rb` and be sure to require that file in `rails_helper.rb`:
 
 ```ru
@@ -115,6 +122,7 @@ end
 NB: Or you can paste the whole thing in the bottom of the `rails_helper.rb` ala shoulda-matchers config.
 
 ### Configure Database Cleaner
+
 Require the database cleaner in your `rails_helper.rb`, probably near where you require rspec at the top.
 
 `require 'database_cleaner/active_record'`
