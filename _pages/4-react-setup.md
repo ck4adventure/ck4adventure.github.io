@@ -18,6 +18,31 @@ This installs all of the babel and webpack dependencies along with react and rea
 
 `rails new <name> -d-postgresql --webpack=react`
 
+#### Options List
+```
+      [--skip-gemfile], [--no-skip-gemfile]                  # Don't create a Gemfile
+  -G, [--skip-git], [--no-skip-git]                          # Skip .gitignore file
+      [--skip-keeps], [--no-skip-keeps]                      # Skip source control .keep files
+  -M, [--skip-action-mailer], [--no-skip-action-mailer]      # Skip Action Mailer files
+      [--skip-action-mailbox], [--no-skip-action-mailbox]    # Skip Action Mailbox gem
+      [--skip-action-text], [--no-skip-action-text]          # Skip Action Text gem
+  -O, [--skip-active-record], [--no-skip-active-record]      # Skip Active Record files
+      [--skip-active-job], [--no-skip-active-job]            # Skip Active Job
+      [--skip-active-storage], [--no-skip-active-storage]    # Skip Active Storage files
+  -P, [--skip-puma], [--no-skip-puma]                        # Skip Puma related files
+  -C, [--skip-action-cable], [--no-skip-action-cable]        # Skip Action Cable files
+  -S, [--skip-sprockets], [--no-skip-sprockets]              # Skip Sprockets files
+      [--skip-spring], [--no-skip-spring]                    # Don't install Spring application preloader
+      [--skip-listen], [--no-skip-listen]                    # Don't generate configuration that depends on the listen gem
+  -J, [--skip-javascript], [--no-skip-javascript]            # Skip JavaScript files
+      [--skip-turbolinks], [--no-skip-turbolinks]            # Skip turbolinks gem
+      [--skip-jbuilder], [--no-skip-jbuilder]                # Skip jbuilder gem
+  -T, [--skip-test], [--no-skip-test]                        # Skip test files
+      [--skip-system-test], [--no-skip-system-test]          # Skip system test files
+      [--skip-bootsnap], [--no-skip-bootsnap]                # Skip bootsnap gem
+```
+
+
 ## Add additional needs
 
 `yarn add react-router-dom react-redux redux redux-logger redux-thunk`
