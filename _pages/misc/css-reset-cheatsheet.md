@@ -3,6 +3,8 @@ layout: page
 title: CSS Cheatsheet
 permalink: /css-cheats/
 ---
+A basic css reset I got from my school and after trying a couple others, this one is still my preferred.
+
 ```css
 html, body, header, nav, h1, a,
 ul, li, strong, main, button, i,

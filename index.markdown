@@ -7,10 +7,9 @@ layout: home
 
 I am a\_
 
-      _human
-      _nature_girl
-      _green_thumb
+      _humanist
       _dedicated_coder
-      _decadent_cook
-      _captivating_dancer
+      _nature_enthusiast
+      _green_thumb
+      _hobbyist_pastry_chef
 
