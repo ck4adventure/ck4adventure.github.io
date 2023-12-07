@@ -1,34 +1,8 @@
 ---
 layout: page
-title: React Routes
-permalink: /react-routes/
+title: React Basics
+permalink: /_pages/react/react-basics/
 ---
-
-## Wrap Provider and Hash Router
-
-## Class Component Container
-
-import connect
-import actions and selectors
-mapStateToProps
-mapDispatchToProps
-export line
-
-## Class Components
-
-constructor
-lifecycle methods
-
-- componentDidMount
-- componentDidUpdate
-- compononentWillUnmount
-  render
-  binding any passed action handlers
-
-# Functional Components
-
-depend on props being passed to them
-more reusable, less overhead
 
 # React Hooks
 
@@ -74,5 +48,35 @@ return (
   <button onClick={() => dispatch({ type: 'increment-counter' })}>
 )
 ```
+
+## Older React
+
+#### Wrap Provider and Hash Router
+
+#### Class Component Container
+
+import connect
+import actions and selectors
+mapStateToProps
+mapDispatchToProps
+export line
+
+#### Class Components
+
+constructor
+lifecycle methods
+
+- componentDidMount
+- componentDidUpdate
+- compononentWillUnmount
+  render
+  binding any passed action handlers
+
+# Functional Components
+
+depend on props being passed to them
+more reusable, less overhead
+
+
 
 ## Links and Routes
