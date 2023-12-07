@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-
+#### Posts
 <ul>
   {% for post in site.posts %}
     <li>
@@ -12,6 +12,16 @@ permalink: /about/
   {% endfor %}
 </ul>
 
+#### Pages
+<ul>
+  {% for page in site.pages %}
+    <li>
+      <a href="{{ page.url }}">{{ page.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+## About Me
 SynthesisAI 2021-2024
 Software Engineer
 

@@ -4,18 +4,18 @@ title: Dev Notes
 permalink: /quickstarts/
 ---
 Rails Notes
-- [Rails Setup](/_pages/rails/setup-rails.md)
-- [Rails Models](/_pages/rails/rails-models.md)
-- [Routes n Controllers](/_pages/rails/rails-routes-controllers.md)
-- [Rspec Tests](/_pages/rails/rails-rspec.md)
+- [Rails Setup](/notes/rails/setup-rails.md)
+- [Rails Models](/notes/rails/rails-models.md)
+- [Routes n Controllers](/notes/rails/rails-routes-controllers.md)
+- [Rspec Tests](/notes/rails/rails-rspec.md)
 
 React Notes
-- [React Setup](/_pages/react/setup-vite-react.md)
-- [React Redux](/_pages/react/setup-react-redux.md)
-- [React Concepts](/_pages/react/react-basics.md)
-- [Jest with React](/_pages/react/setup-jest-react.md)
+- [React Setup](/notes/react/setup-vite-react.md)
+- [React Redux](/notes/react/setup-react-redux.md)
+- [React Concepts](/notes/react/react-basics.md)
+- [Jest with React](/notes/react/setup-jest-react.md)
 
 Misc
-- [Building Process](/_pages/misc/building-process.md)
-- [CSS Reset](/_pages/misc/css-reset-cheatsheet.md)
-- [Tools](/_pages/misc/dev-tools.md)
+- [Building Process](/notes/misc/building-process.md)
+- [CSS Reset](/notes/misc/css-reset-cheatsheet.md)
+- [Tools](/notes/misc/dev-tools.md)
