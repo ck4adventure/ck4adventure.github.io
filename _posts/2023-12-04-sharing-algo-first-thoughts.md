@@ -1,5 +1,6 @@
 ---
-title: Sharing Algo
+layout: post
+title: Sharing Algo First Thoughts
 ---
 
 Outline for Sharing Algo
