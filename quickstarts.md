@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Dev Notes
-permalink: /quickstarts/
 ---
+
 Rails Notes
 - [Rails Setup](/notes/rails/setup-rails.md)
 - [Rails Models](/notes/rails/rails-models.md)
