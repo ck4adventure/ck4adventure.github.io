@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Vite React
-permalink: /vite-react/
 ---
 ### Basic Setup
 - Ensure you are using node: `nvm use lts/iron`

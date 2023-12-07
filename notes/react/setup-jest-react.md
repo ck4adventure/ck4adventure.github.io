@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Jest for React
-permalink: /jest-react/
 ---
 
 # Testing Setup

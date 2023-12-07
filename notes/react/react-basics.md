@@ -1,8 +1,10 @@
 ---
 layout: page
 title: React Basics
-permalink: /_pages/react/react-basics/
 ---
+# Components
+get CamelCase
+import and export methods of es6 vs commonjs apply
 
 # React Hooks
 

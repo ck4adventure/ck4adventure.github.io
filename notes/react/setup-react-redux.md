@@ -1,7 +1,6 @@
 ---
 layout: page
 title: React-Redux
-permalink: /react-redux/
 ---
 # Wiring in the Framework
 
