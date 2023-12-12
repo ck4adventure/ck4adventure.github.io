@@ -2,14 +2,18 @@
 layout: page
 title: React-Redux
 ---
-# Wiring in the Framework
 
-## Entry File
-With Rails and Webpacker, `application.js` is what Rails knows to look for and will compile into packs. 
+An `action` is an object that describes a change to the global state. An action must be `dispatched` to the store where a `reducer` contains logic to receive the action and any data supplied with it and update the state accordingly. Although it seems like actions are defined within reducers, they can actually exist across multiple reducers to affect multiple `slices` of the state with a single action.
 
-Here React and React DOM combine to render the root element into the html tag given. In the initial setup, a placeholder element is put in to verify js is compiling correctly and also finding the DOM element.
+When defining a `slice` of state it is given a name, an `initial state` which is super useful to have data to display before the app can even get responses back from a server, and a list of reducers to define which actions that slice of state will respond to, and what it will do for each of those actions and data.
 
-Later, it will configure a store with any preloaded state needed and pass that to a component called Root, which in turn can wrap more components.
+Immutability is the concept of a static value that cannot be changed. *In order to update values immutably, your code must make copies of existing objects/arrays, and then modify the copies.* This is accomplished by array / object spread operators, as well as array methods that return new copies that can be updated.
+
+
+### Wiring in the Framework
+
+#### Entry File
+Wherever React and React DOM combine to render the root element into the html tag given is considered the app entrypoint. Here a store `provider` is put in as an element around the entire react app, allowing it to be accessible to all components. Here is where initial state could also be passed in.
 
 ```js
 // app/javascript/packs/application.js
