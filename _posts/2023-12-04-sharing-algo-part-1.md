@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Sharing Algo
+category: dev
 ---
 
 An initially frustrating yet ultimately satisying task given to me at a job was to take a query specification that worked for one part of the product, and create a sharing algorithm that could parse that same specification but use it in a different way to query a separate part of the product. For acceptance criteria I was given a confluence page with a couple examples of queries, and an output definition with the sole requirement of returning a list of unique IDs. On the surface, it sounds trivial, but first you, dear reader, need a bit more context on the data and how the specifications worked.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Here we go a bloggin'"
 date:   2020-04-08 17:04:08 -0700
-categories: update tools
+category: dev
 ---
 
 Goals of my personal blog site:

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: End of Week One
+category: dev
 ---
 
 What a crazy week this has been. From having my first blundering chat about my career and skills to the incredibly consistent support of people telling me to get my own scheduler app out there, to losing a dear friend of the family from my childhood, and finally realizing I need a much deeper understanding of Typescript, there hasn't been a dull day yet. 
