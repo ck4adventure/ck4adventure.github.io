@@ -2,7 +2,7 @@
 layout: post
 title:  "Rails Project Crib Notes"
 date:   2020-04-10 17:04:08 -0700
-categories: rails how-to notes
+category: dev
 ---
 
 ## New Rails Project

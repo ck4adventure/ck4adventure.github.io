@@ -2,7 +2,7 @@
 layout: post
 title: Ruby Review
 date: 2020-05-04 14:27 -0700
-categories: ruby rails how-to
+category: dev
 ---
 
 Ruby Review
