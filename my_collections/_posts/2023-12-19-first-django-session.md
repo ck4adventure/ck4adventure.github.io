@@ -71,7 +71,7 @@ urlpatterns = [
 ### Hooking in a db
 At this point if it were a postgres db, there would be a need to stop and set that up, through either a docker container running a pg instance or running pg locally on my machine. However, python has sqlite3 which runs off of local files, which is enough for getting started with django concepts.
 
-Since I didn't specify anything other than the default when creating the practice project, sqlite3 has already been set as the db `ENGINE`, and it's file created for me in the root dir, the path of which is listed under the `NAME`. I verify that before scrolling down even further and setting the `TIME_ZONE` to 'America/Los_Angeles'. I will go back and dig in later to confirm that this just informs the physical location of the server, since `USE_TZ = True` is also set by default, which tells the app to always store datetimes in UTC.
+The db settings are in `<appname>/settings.py`. Since I didn't specify anything other than the default when creating the practice project, sqlite3 has already been set as the db `ENGINE`, and it's file created for me in the root dir, the path of which is listed under the `NAME`. I verify that before scrolling down even further and setting the `TIME_ZONE` to 'America/Los_Angeles'. I will go back and dig in later to confirm that this just informs the physical location of the server, since `USE_TZ = True` is also set by default, which tells the app to always store datetimes in UTC.
 
 Finally, it's time to run the migration and get rid of the pesky warnings `python manage.py migrate`
 
@@ -79,7 +79,7 @@ Finally, it's time to run the migration and get rid of the pesky warnings `pytho
 Django believes the data model should be defined in one place and everything derives it's data from that. This extends to migrations, where unlike rails:
 > migrations are entirely derived from your models file, and are essentially a history that Django can roll through to update your database schema to match your current models.
 
-Example models in practice/model.py 
+Example models in practice/polls/model.py 
 ```py
 from django.db import models
 
