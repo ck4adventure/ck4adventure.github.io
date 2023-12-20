@@ -1,6 +1,7 @@
 ---
 layout: page
 title: React-Redux
+topic: react
 ---
 
 An `action` is an object that describes a change to the global state. An action must be `dispatched` to the store where a `reducer` contains logic to receive the action and any data supplied with it and update the state accordingly. Although it seems like actions are defined within reducers, they can actually exist across multiple reducers to affect multiple `slices` of the state with a single action.

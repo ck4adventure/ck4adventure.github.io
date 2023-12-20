@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rails Models
-permalink: /rails-models/
+topic: rails
 ---
 
 ## Models and Migrations

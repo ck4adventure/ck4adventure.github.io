@@ -1,7 +1,7 @@
 ---
 layout: page
 title: React Setup
-permalink: /new-react/
+topic: rails
 ---
 
 # With Rails 6

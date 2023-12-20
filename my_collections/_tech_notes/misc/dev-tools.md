@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Dev Tools
-permalink: /dev-tools
+topic: product
 ---
 # Managing Environments
 

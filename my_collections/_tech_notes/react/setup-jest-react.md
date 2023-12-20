@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Jest for React
+topic: react
 ---
 
 # Testing Setup

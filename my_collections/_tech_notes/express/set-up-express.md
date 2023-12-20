@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Set Up Express
-permalink: /set-up-express/
+topic: express
 ---
+
 ### Initial Setup
 `mkdir <name>`
 `cd <name>`
@@ -40,3 +41,4 @@ app.listen(port, () => {
 
 Run `node index.js` from the root directory to start server.
 Ping `http://localhost:3000/` from cURL or a fun GUI like Postman.
+

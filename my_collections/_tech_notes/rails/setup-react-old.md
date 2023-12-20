@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Older React Setup
-permalink: /old-react/
+topic: rails
 ---
 
 # OLD React Framework on top of Rails Backend

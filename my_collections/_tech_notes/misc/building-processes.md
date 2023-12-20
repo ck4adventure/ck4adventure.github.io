@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Building Process
-permalink: /building-process/
+topic: product
 ---
 
 I love being an entrepreneur. Below is a general overview of my product methodology.

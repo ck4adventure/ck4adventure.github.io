@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Rails Setup
-permalink: /rails-setup/
+topic: rails
 ---
 
 ## New Rails Project

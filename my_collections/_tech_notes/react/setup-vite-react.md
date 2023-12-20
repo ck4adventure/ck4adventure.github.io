@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Vite React
+topic: react
 ---
 ### Basic Setup
 - Ensure you are using node: `nvm use lts/iron`

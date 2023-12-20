@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RSpec
-permalink: /rspec/
+topic: rails
 ---
 
 ## Rspec Reference

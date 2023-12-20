@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Express App Structure
-permalink: /_pages/express/express-app-structure
+topic: express
 ---
 Routes
 Controllers

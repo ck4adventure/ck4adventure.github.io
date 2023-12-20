@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Routes and Controllers
-permalink: /rails-controllers/
+topic: rails
 ---
 
 ### Controllers and Routing

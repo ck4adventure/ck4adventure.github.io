@@ -1,8 +1,4 @@
----
-layout: page
-title: About
----
-> TLDR; My joy as an engineer is in delivering a well designed, thoughtful product that works.
+> My joy as an engineer is in delivering a well designed, thoughtful product that works.
 
 ### SKILLS
 **Frontend**: React/Typescript, HTML, CSS, Templates, UX and mockups  
@@ -83,3 +79,6 @@ German Literature from the Renaissance to Current Trends
 - Successfully growing tasty veggies in the challenging Bay Area microclimate 
 - Learning to bake french patisserie and other difficult desserts
 - A good adrenaline rush once in a while
+
+
+    ![brida hike](/images/brida_hike.jpeg)

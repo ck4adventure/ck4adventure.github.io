@@ -1,6 +1,7 @@
 ---
 layout: page
 title: React Basics
+topic: react
 ---
 # Components
 get CamelCase

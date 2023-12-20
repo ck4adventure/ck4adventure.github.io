@@ -18,14 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Christina Kiesz - Software Engineer
+title: Christina's Corner
+author: Christina Kiesz
 email: ckiesz@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  API Backends with React/Typescript FE
+  Fullstack Developer and Entrepreneur
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: ck4adventure
+
+collections_dir: my_collections
+collections:
+  recipes:
+    output: true
+  tech_notes:
+    output: true
 
 # Build settings
 theme: minima
