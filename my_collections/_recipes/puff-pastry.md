@@ -3,6 +3,8 @@ layout: page
 title: Puff Pastry
 ---
 
+Such a yummy pastry that is incredibly versatile.
+
 #### Ingredients
 - 1/2lb butter
 - 1/2lb flour
