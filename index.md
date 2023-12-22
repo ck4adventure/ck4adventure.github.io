@@ -8,8 +8,6 @@ layout: home
 I am a\_
 
       _humanist
-      _dedicated_coder
-      _nature_enthusiast
-      _green_thumb
-      _hobbyist_pastry_chef
-
+      _software_engineer
+      _veggie_gardener
+      _chef
