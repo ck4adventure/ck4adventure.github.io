@@ -1,8 +1,10 @@
 ---
 title: Tech Notes
 ---
+<div class="row">
 {% assign mynotes = site.tech_notes | group_by: 'topic' %}
 {% for cat in mynotes %}
+<div class="cat-col">
   <h3>{{ cat.name | capitalize }}</h3>
   <ul>
     {% assign items = cat.items | sort: 'title' %}
@@ -10,4 +12,6 @@ title: Tech Notes
       <li><a href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
   </ul>
+</div>
 {% endfor %}
+</div>

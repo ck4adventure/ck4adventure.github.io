@@ -2,6 +2,7 @@
 title: Lemon Cloud
 layout: page
 author: Christina Kiesz
+category: sweets
 ---
 No Bake Lemon Cloud
 

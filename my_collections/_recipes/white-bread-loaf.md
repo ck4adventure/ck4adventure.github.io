@@ -2,6 +2,7 @@
 layout: page
 title: White Bread Loaf
 author: Paul Hollywood
+category: bread
 ---
 
 #### Ingredients

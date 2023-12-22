@@ -2,6 +2,7 @@
 title: Magic Cookie Bars
 layout: page
 author: Eagle Brand
+category: sweets
 ---
 #### Ingredients
 1 1/2 cups graham cracker crumbs

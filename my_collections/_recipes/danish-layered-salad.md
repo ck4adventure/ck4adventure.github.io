@@ -2,6 +2,7 @@
 title: Daenische Schichtsalat
 author: Christina Kiesz
 layout: page
+category: sides
 ---
 
 Danish layered 'salad' traditionally smeared on a think slice of dark bread.

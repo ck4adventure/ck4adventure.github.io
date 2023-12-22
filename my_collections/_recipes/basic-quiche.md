@@ -2,6 +2,7 @@
 title: Basic Quiche
 layout: page
 author: Betty Crocker
+category: mains
 ---
 ### Ingredients
 9 inch pie crust

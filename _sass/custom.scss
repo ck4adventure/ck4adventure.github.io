@@ -1,0 +1,23 @@
+.homepage-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.homepage-column {
+ margin: 10px;
+}
+
+.homepage-cat-column {
+  margin: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.cat-col {
+  margin: 20px;
+}

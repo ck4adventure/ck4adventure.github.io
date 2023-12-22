@@ -2,6 +2,7 @@
 layout: page
 title: Snickerdoodles
 author: Robert Kiesz
+category: cookies
 ---
 
 Such a classic.
