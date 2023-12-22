@@ -1,6 +1,3 @@
----
-title: Recipes
----
 <div class="row">
 {% assign myrecipes = site.recipes | group_by: 'category' %}
 {% for cat in myrecipes %}

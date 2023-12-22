@@ -1,6 +1,3 @@
----
-title: Tech Notes
----
 <div class="row">
 {% assign mynotes = site.tech_notes | group_by: 'topic' %}
 {% for cat in mynotes %}

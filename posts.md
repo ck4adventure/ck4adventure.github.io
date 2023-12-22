@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Posts
 ---
 <div class="row">
