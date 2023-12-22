@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Snickerdoodles
+author: Robert Kiesz
 ---
 
 Such a classic.

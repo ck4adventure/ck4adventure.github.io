@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Puff Pastry
+book: The Joy of Cooking
 ---
 
 Such a yummy pastry that is incredibly versatile.

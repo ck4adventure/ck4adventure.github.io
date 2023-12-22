@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Lucie Kiesz's Persimmon Cookies
+title: Grandma's Persimmon Cookies
+author: Lucie Kiesz
 ---
 
 I remember my grandmother getting wonderfully ripe persimmons from friendly countryside neighbors who would leave their fruit out on a table and a box for the money, on the honor system.
