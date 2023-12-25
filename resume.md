@@ -1,4 +1,4 @@
-> My joy as an engineer is in delivering a well designed, thoughtful product that works.
+> My joy as an engineer is in delivering a well designed, thoughtful product that works.  
 
 ### SKILLS
 **Frontend**: React/Typescript, HTML, CSS, Templates, UX and mockups  
