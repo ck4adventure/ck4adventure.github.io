@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Static Files in Django
+title: Admin Panel and Static Files
 category: dev
 ---
+Day 5 of learning Django :D
 
 ### Static Files
 In addition to the html generated and served by each view method, Django handles all of the other files, such as css and images as "statics". There are some conventions used to keep things organized. First, create a `static` folder in each app directory that will need to store static assets. Django's `STATICFILES_FINDERS` will automatically round up all the files and store them in a pool, similar to how it works with `templates`. And for that reason, all the files need to be namespaced under their app's name within the static folder. A css file would have the following path `project/polls/static/polls/style.css`
@@ -29,3 +30,74 @@ Things to follow up on later as I start to work with static files:
 - [Static files how-to](https://docs.djangoproject.com/en/5.0/howto/static-files/)
 - [The staticfiles app](https://docs.djangoproject.com/en/5.0/ref/contrib/staticfiles/)
 - [Deploying static files in production](https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/)
+
+### Admin Panel
+
+Customizing the admin form is done by extending the class model.Admin class with each Model so that it can be modified, and the registering it. The following code changes the order that the Question fields will be displayed. Although this change is trivial, creating an intuitive order of field editing can be crucial to a smooth user experience.
+
+```py
+from django.contrib import admin
+
+from .models import Question
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    fields = ["pub_date", "question_text"]
+
+
+admin.site.register(Question, QuestionAdmin)
+```
+> You’ll follow this pattern – create a model admin class, then pass it as the second argument to admin.site.register() – any time you need to change the admin options for a model.
+
+An example of grouping properties into `fieldsets` for easier human navigation
+```py
+class QuestionAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {"fields": ["question_text"]}),
+        ("Date information", {"fields": ["pub_date"]}),
+    ]
+
+```
+
+This is great so far, but really, we want to see more of the related information of the Question model, such as the Choices. One way to solve this problem is to simply register the Choice model into the admin site. Django knows enough about the relations to know that there is a FK on choice that points to a question. So when we visit the admin panel and visit the Choices index and then view a particular choice, Django has already put together some form interactions, such as being able to create a new Question to associate the Choice to, edit the choice text, and increment the number of votes that are recorded. It's ok, but not really efficient.
+
+Instead, Django offers other form configurations to allow for relationships and different data types. If we choose a different form type, like `StackedInline`, Django will display the data differently. It also allows other options, such as setting the number of extra Choices to be displayed. And the QuestionAdmin panel is adjusted as well to list the ChoiceInline as part of QuestionAdmin form. And now the Choice doesn't need to be registered separately, it gets pulled into the Question panel. Also to note, the `extra` field property on StackedInline defines how many empty choice fields are displayed in addition to any already created.
+
+```py
+from django.contrib import admin
+
+from .models import Choice, Question
+
+
+class ChoiceInline(admin.StackedInline):
+    model = Choice
+    extra = 3
+
+
+class QuestionAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None, {"fields": ["question_text"]}),
+        ("Date information", {"fields": ["pub_date"], "classes": ["collapse"]}),
+    ]
+    inlines = [ChoiceInline]
+    list_display = ["question_text", "pub_date", "was_published_recently"]
+
+
+admin.site.register(Question, QuestionAdmin)
+```
+
+Another popular form layout is `TabularInline`, which allows the data to be shown in a more compact table like format. The class would extend like so `class ChoiceInline(admin.TabularInline):`. An additional customizer is to use the `list_display` to declare exactly which properties of the model to display, rather than relying on its `__str__` method. Django is even coded smart enough to know which columns it can sort on or not in the table display generated.
+
+Because the admin panel takes property names and simply transforms them with spaces and all uppercase, it also allows for overriding the default name with a more readable one. More info can be found in the [Django Admin Docs](https://docs.djangoproject.com/en/5.0/ref/contrib/admin/#django.contrib.admin.display). In this example, the column name is updated, and the column data becomes a green check or red x for true/false.
+
+```py
+class Question(models.Model):
+    # ... put this down with the other methods
+    @admin.display(
+        boolean=True,
+        ordering="pub_date",
+        description="Published recently?",
+    )
+```
+
+
