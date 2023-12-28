@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> Week of Dec 18th: I want to work with Python as a language because of the wide range of business domain logic it can solve. Django also seems to be an incredibly solid web framework, so I am learning it top to bottom with the intent of creating and releasing my own apps with it. 
+> Week of Dec 25th: I still like what I am seeing in Django, slight detour to get the details of Python semantics and by the end of the week should be able to deploy my own basic django app for storing, displaying and updating recipes. 
