@@ -16,7 +16,7 @@ layout: default
     <h3 class="post-list-heading"><a href="/posts">Recent Dev Learning</a></h3>
     <ul class="post-list">
       {% assign dev_posts = site.posts | where: "category", "dev" %}
-      {%- for post in dev_posts limit:2 -%}
+      {%- for post in dev_posts limit:4 -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
