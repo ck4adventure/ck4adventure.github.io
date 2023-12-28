@@ -123,3 +123,50 @@ There is also an alternate syntax of `from random import *`, which in this use c
 ### Exiting
 Although a web server should never allow itself to terminate so simply, for scripts and smaller applications it can be super handy to end it early, before reaching the end of the code.
 `sys.exit()`, but! you have to remember to import it where it is used as well `import sys`.
+
+### Functions
+Functions must be `defined` with the `def` in front, are written with the same colon notation, and the `parameters` are listed within parenthesiss. The function can be `called` multiple times, each time with different `arguments` passed in. I also happen to know that the params can be optionally typed.
+```py
+➊ def hello(name):
+    ➋ print('Hello, ' + name)
+
+hello("Abigail")
+```
+
+At the end of the function can be a return statement, which returns the value or expression immediately following the word `return`.
+
+### None Type
+Instead of `null, nil, or undefined` that other languages use, here, we have `NoneType` data type and the `None` value. Implicitly, any function that does not end with a return statement will have `return None` added to the end of it. For and while loops also have an implicit continue added which enables them to keep running.
+
+### Kwargs
+Keyword arguments (kwargs) are a way of allowing all kinds of optional arguments to be passed in. Rather than depending on order of arguments the way `range()` does, the keyword arguments assign the value to the parameter named. 
+
+### The Stack and Scope
+Python operates with a `call stack` so that it can queue up a list of items to be executed. Items can be added to the top of the stack to take precedence, and then python will continue working through the rest. Each item in the stack is a `frame object` which points to a line number of code to resume executing. Items can be added and removed from the top of the stack only. 
+
+All the variables created within a program fall under one of two categories, `global` scope which is created when the program begins and before any functions run, and `local` scope which is contained to a function or code block. 
+- local variables are not available to the global scope
+- local scopes can't use variables from other local scopes
+- global variables *can* be accessed in any local scope
+
+Because global variables must be defined outside of functions, to overwrite them from within a function, it must be specified that the global variable is to be re-used, and not a new local one created. 
+```py
+def spam():
+  ➊ global eggs
+  ➋ eggs = 'spam'
+
+eggs = 'global'
+spam()
+print(eggs)
+```
+
+### Exception Handling
+Similar to js, python provides a way to encapsulate operations which might throw errors and do something specific to handle those errors rather than just crashing out or displaying a generic message. After handling the error, the code will resume in the next block normally.
+
+```py
+def spam(divideBy):
+    try:
+        return 42 / divideBy
+    except ZeroDivisionError:
+        print('Error: Invalid argument.')
+```
