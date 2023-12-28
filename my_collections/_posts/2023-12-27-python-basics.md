@@ -8,6 +8,7 @@ I just came across what I think is a great book on Python called [Automate The B
 
 The first thing (which I think I had learned once and forgotten) was that Python is not named for the snake, but for the comedy troupe. 
 
+### Basic Concepts
 `REPL` stands for Read-Execute-Print-Loop, and is a type of `IDE` Integrated Development Environment. The Python `IDLE` is for Integrated Development and Learning Environment. There is an online environment called [`Mu`](https://codewith.mu/)
 
 `expressions` are statements that contain `values` (like 2) and `operators` like (+) that `evaluate` into a single value (even if that value is sometimes itself a function).
@@ -45,3 +46,80 @@ Length is abbreviated to `len()`. Starting to finally remember that one.
 Data types are not implicitly cast to anything else under the hood (think js), so instead, there are functions to explicitly do that when it is wanted. `str(), int(), and float()`. However, integers and floating points can be compared to each other `42 == 42.0`
 
 Booleans in python are spelled `True` and `False`.
+
+Comparison operators work as expected. To compare equality is it `==`, there is no strict equal `===` as in javascript.
+
+There are three boolean operators, `and`, `or`, and `not`, which, like in ruby, just flips the value.
+
+### Code Blocks
+Indentations matter as a way for the compiler to understand the code. A group of code is described as a `block`. A block of code begins when the identation increases, it can contain other blocks, and a block ends when the indentation decreases again.
+
+An example from the docs to illustrate identations:
+```py
+  name = 'Mary'
+  password = 'swordfish'
+  if name == 'Mary':
+    ➊ print('Hello, Mary')
+       if password == 'swordfish':
+        ➋ print('Access granted.')
+       else:
+        ➌ print('Wrong password.')
+
+```
+
+#### Flow Control and Notation
+The standard cs concepts of flow control, such as if-else statements are available. Else if is written as `elif` The notation follows the indentation principle, but also adds a colon at the end, like so:
+```py
+if name == 'Alice':
+    print('Hi, Alice.')
+elif age < 12:
+    print('You are not Alice, kiddo.')
+else:
+    print('Hello, stranger')
+```
+
+`while` loops also follow the colon notation and takes a condition that evaluates to True/False. While true, the loop continues to execute. `break` and `continue` are there to get out of it as well.
+
+`for` loops work in conjunction with something that can be iterated, like `range()`
+```py
+for i in range(5):
+    print('Jimmy Five Times (' + str(i) + ')')
+```
+
+And `range()` is super nice because it can take a single number, which becomes 0 to that number, or if passed two arguments, they become start and end (not inclusive):
+```py
+for i in range(12, 16):
+    print(i)
+```
+
+And when passed a third, the `range()` can do an interval jump. If passed a negative number, it will step downwards, but make sure to have start and end numbers logical to that as well:
+```py
+for i in range(5, -1, -1):
+    print(i)
+
+# output:
+# 5
+# 4
+# 3
+# 2
+# 1
+# 0
+```
+
+### Modules
+Although python has a basic set of functions built in like `str()`, `len()` and `input()`, it would be too bulky to include everything in the code set at once while running. So instead, code is broken off into `modules`, each of which contains a small bit of code relating to a logic domain, such as math. By importing just the additional functionality needed, programs are kept lightweight and efficient.
+
+Importing a module follows the syntax of `import` followed by a comma separated list of modules. 
+
+`import random, sys, os, math`
+```py
+import random
+for i in range(5):
+    print(random.randint(1, 10))
+```
+
+There is also an alternate syntax of `from random import *`, which in this use case is more verbose, but that star can be replaced by a method name if you want just the one.
+
+### Exiting
+Although a web server should never allow itself to terminate so simply, for scripts and smaller applications it can be super handy to end it early, before reaching the end of the code.
+`sys.exit()`, but! you have to remember to import it where it is used as well `import sys`.
