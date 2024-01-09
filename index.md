@@ -4,4 +4,4 @@
 
 layout: home
 ---
-> Week of Dec 25th: I still like what I am seeing in Django, slight detour to get the details of Python semantics and by the end of the week should be able to deploy my own basic django app for storing, displaying and updating recipes. 
+> Week of Jan 8th: My recipe app is almost ready for deployment, I really do enjoy Django, such fun to have a framework with a cms built in that is actually easily configurable. Can't wait to finally have an online project where I can have all my favorite recipes at my finger tips.

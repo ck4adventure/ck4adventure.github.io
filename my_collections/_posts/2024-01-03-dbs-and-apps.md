@@ -14,7 +14,16 @@ There is a lot of postgres connection that is just skipped over, so I'm not exac
 
 
 
-
+I do like the reference list of data types
+|  |  |  |   |
+| --- | --- | --- | --- |
+| AutoField | BigAutoField | BigIntegerField | BinaryField |  
+| BooleanField | CharField | DateField | DateTimeField |  
+| DecimalField | DurationField | EmailField | FileField |  
+| FilePathField | FloatField | ImageField | IntegerField|  
+| GenericIPAddressField | JSONField | NullBooleanField |  PositiveBigIntegerField | 
+|  PositiveIntegerField | PositiveSmallIntegerField | SlugField | SmallAutoField |  
+| TextField | TimeField | URLField | UUIDField |  
 
 
 ...
