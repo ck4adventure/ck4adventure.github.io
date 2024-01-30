@@ -1,0 +1,16 @@
+---
+topic: css
+---
+
+A great way to set border box sizing on all elements. The html is the root element of the document and has no parents which could interfere, and then by having all elements inherit that, and ensuring that any element before or after is also covered.
+```css
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+```
