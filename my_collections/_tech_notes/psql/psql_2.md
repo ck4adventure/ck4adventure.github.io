@@ -1,0 +1,43 @@
+## PSQL Continued
+
+### Joins Tables
+Basic joins work with anything that will match up exactly across both tables:
+```sql
+SELECT * FROM weather JOIN cities ON city = name;
+```
+
+But to be safe, should be more exact on column names:
+```sql
+SELECT weather.city, weather.temp_lo, weather.temp_hi,
+       weather.prcp, weather.date, cities.location
+FROM weather JOIN cities ON weather.city = cities.name;
+```
+
+Outer joins are where data that doesn't match up gets empty values. Left outer joins follows the columns of the table to the left of the join operator. Right outer joins will add empty values to the cols from the table listed on the right. A full outer join puts all cols together and puts empty vals for anything missing.
+```sql
+SELECT *
+FROM weather LEFT OUTER JOIN cities ON weather.city = cities.name;
+```
+
+We can also join a table against itself. This is called a self join. As an example, suppose we wish to find all the weather records that are in the temperature range of other weather records. So we need to compare the temp_lo and temp_hi columns of each weather row to the temp_lo and temp_hi columns of all other weather rows. We can do this with the following query:
+```sql
+SELECT w1.city, w1.temp_lo AS low, w1.temp_hi AS high,
+       w2.city, w2.temp_lo AS low, w2.temp_hi AS high
+FROM weather w1 JOIN weather w2
+    ON w1.temp_lo < w2.temp_lo AND w1.temp_hi > w2.temp_hi;
+```
+
+### More advanced queries
+A subquery is run independently of the main query
+```sql
+SELECT city FROM weather
+  WHERE temp_lo = (SELECT max(temp_lo) FROM weather);
+```
+
+Aggregates 
+```sql
+SELECT city, count(*), max(temp_lo)
+FROM weather
+GROUP BY city
+HAVING max(temp_lo) < 40;
+```
