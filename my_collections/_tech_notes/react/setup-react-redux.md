@@ -10,6 +10,23 @@ When defining a `slice` of state it is given a name, an `initial state` which is
 
 Immutability is the concept of a static value that cannot be changed. *In order to update values immutably, your code must make copies of existing objects/arrays, and then modify the copies.* This is accomplished by array / object spread operators, as well as array methods that return new copies that can be updated.
 
+## 2024 Redux Pattern
+- so handy that I know the old concepts to understand the new way
+- create a features folder that handles business logic for each feature
+- for example, if the feature is a number counter button, folder called 'counter' and file called `counterSlice`
+- give a name, inital state, reducers
+- generates the actions and their payloads (action type and payload (which is typed, ugh)), using the name and reducer names, so choose wisely
+- redux now uses immer under the hood (which also explains devs jumping to Zustand)
+- immer handles the immutability of the state for us
+- typescript requires additional file to wrap standard hooks aliased with their types, which is a nice meta pattern
+- still have to setup a `store.ts` file that combines all the slices
+- thunks are the concept of wrapping an api call so that the application can do other things while it waits for data to come back
+- ie, a loading spinner
+- so an action would be dispatched, and it would have a pending, resolved, and rejected set of code logic to follow
+- this is available via extraReducers and builder functions in redux toolkit
+- ReduxToolKit TRK is about to have a feature that will write all this for you
+
+## 2018 Redux Pattern
 
 ### Wiring in the Framework
 
