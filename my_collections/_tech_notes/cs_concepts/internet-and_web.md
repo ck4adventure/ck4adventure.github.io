@@ -1,5 +1,7 @@
 ---
-topic: cs
+topic: CS
+title: Basic Internet
+layout: page
 ---
 How the internet works
 - dns domain name system for aliasing human readable names to ip addresses

@@ -1,3 +1,9 @@
+---
+layout: page
+title: PGSQL Joins
+topic: pgsql
+---
+
 ## PSQL Continued
 
 ### Joins Tables

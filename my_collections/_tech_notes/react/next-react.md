@@ -2,6 +2,7 @@
 topic: react
 title: Next.js as a React Framework
 date: 2024-02-01
+layout: page
 ---
 
 Front end web technology has indeed come full circle. Server side rendering of React seems like it might solve a few problems, so I am learning it to find out more

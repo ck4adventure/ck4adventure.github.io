@@ -1,6 +1,7 @@
 ---
 title: Django and Timezones
 topic: django
+layout: page
 ---
 When working with datetime objects in python, it often requires the use of the datetime module. There are tz "aware" datetime objects and "naive" ones that do not know their timezone. Regular datetime objects are naive and don't know their tz. `is_aware()` and `is_naive()` are methods to determine whether or not a datetime object is naive or not. This is important because of `USE_TZ=True` in the app conf (which is best practice). 
 

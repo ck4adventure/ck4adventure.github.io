@@ -1,3 +1,9 @@
+---
+layout: page
+title: PGSQL Basic Tables
+topic: pgsql
+---
+
 ## PostgreSQL
 
 ### DB Level

@@ -1,4 +1,10 @@
-## PSQL Tables pt 1
+---
+layout: page
+title: PGSQL Docs part 1
+topic: pgsql
+---
+
+## PGSQL Tables pt 1
 
 from the intro we learned that tables can be created and dropped, and that they are a virtual representation of rows and columns drawn on a piece of paper
 

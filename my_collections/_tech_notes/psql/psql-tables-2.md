@@ -1,3 +1,9 @@
+---
+layout: page
+title: PGSQL Docs part 2
+topic: pgsql
+---
+
 ## PSQL Tables pt 2
 
 ### Updating Tables - From the docs

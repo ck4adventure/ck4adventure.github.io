@@ -1,4 +1,6 @@
 ---
+layout: page
+title: Border Box Sizing
 topic: css
 ---
 

@@ -1,3 +1,8 @@
+---
+layout: page
+title: About Next.js
+topic: react
+---
 From the [next.js docs](https://nextjs.org/learn/react-foundations/what-is-react-and-nextjs)
 
 Main Components or Aspects

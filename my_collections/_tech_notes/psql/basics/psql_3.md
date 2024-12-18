@@ -1,3 +1,9 @@
+---
+layout: page
+title: PGSQL Update and Delete
+topic: pgsql
+---
+
 ### PSQL
 
 ### Updating

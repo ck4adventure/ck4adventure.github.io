@@ -1,3 +1,9 @@
+---
+layout: page
+title: PGSQL Views
+topic: pgsql
+---
+
 ## More postgres stuff
 ### Views
 (taken direct from the docs)

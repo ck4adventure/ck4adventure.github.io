@@ -1,6 +1,11 @@
+---
+layout: page
+title: PGSQL Docs part 3
+topic: pgsql
+---
 ## More Psql
 
-### CUD Operations
+### CRUD Operations
 Create, Update, Delete Operations
 can take conditionals, like WHERE
 
