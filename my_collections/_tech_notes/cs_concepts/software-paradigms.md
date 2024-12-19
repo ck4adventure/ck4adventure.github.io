@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Paradigms
-topic: cs
+topic: CS
 ---
 
 Software Paradigms
