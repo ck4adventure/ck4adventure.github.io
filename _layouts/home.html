@@ -12,27 +12,7 @@ layout: default
   </div>
   <div class="homepage-row">
   <div class="homepage-column">
-  {%- if site.posts.size > 0 -%}
-    <h3 class="post-list-heading"><a href="/tech-notes">Latest Tech Notes</a></h3>
-    <ul class="post-list">
-      {% assign dev_posts = site.tech_notes %}
-      {%- for post in dev_posts limit:4 -%}
-      <li>
-        <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span> -->
-        <h4>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h4>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
 
-  {%- endif -%}
   </div>
   <div class="homepage-cat-column">
     <img src="../images/brida_snow.png" alt="me and my dog in the snow" height="200"/>
