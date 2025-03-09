@@ -25,9 +25,17 @@
 .preview-container {
 	display: flex;
 	margin-bottom: 24px;
+
 }
 
-.preview-container > p {
+.preview-container > p, img {
 	margin: 12px
 
+}
+
+.preview-container > img {
+	border: 1px solid lightgray;
+	padding: 4px;
+	margin-top: 16px;
+	border-radius: 4px;
 }

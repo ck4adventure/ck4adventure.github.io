@@ -12,6 +12,12 @@ A thoughtful, creative mid-level developer proficient in front- and back-end dev
 
 
 <h3 class="post-list-heading">Code Projects</h3>
+
+<div class="preview-container">
+<img src="images/recipe_manager_new_recipe.png" alt="New Recipe Form" width="100" height="100">
+<p>Deployment Coming Soon! &nbsp;<b>Recipe Manager</b>, an app to help me manage the ingredients and labeling for my weekend home bakery business. First feature includes database relations of a product which has many recipes, with each recipe having many ingredients, each ingredient with a list of one or many ingredients, and possibly its own recipe. Main goal is to simplify the printing of ingredient labels and allergen warnings for my bakery products.<a href="https://github.com/ck4adventure/recipe_app_nextjs">&nbsp;github</a></p>
+</div>
+
 <div  class="preview-container">
 	<img src="images/cascades_preview.png" alt="Cascades Preview" width="100" height="100">
 
@@ -21,3 +27,4 @@ A thoughtful, creative mid-level developer proficient in front- and back-end dev
 <div class="preview-container">
 <img src="images/snow_recording.gif" alt="Snowscene Preview" width="100" height="100">
 <p><a href="https://ck4adventure.github.io/snowscene/">Snowscene</a> one of my first projects, is a page with falling "snow" and a few controls such as size and wind speed. </p>
+</div>
