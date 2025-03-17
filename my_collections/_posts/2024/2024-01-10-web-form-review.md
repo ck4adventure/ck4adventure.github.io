@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Form Review
-category: dev
+category: html
 ---
 
 After looking at a few different template libraries yesterday, I realized I could use a quick refresher on html elements. I have not ever had to implement anything with regards to accessibiiliy technology, but it is something to consider, and the mozilla docs do a great job of explaining. 

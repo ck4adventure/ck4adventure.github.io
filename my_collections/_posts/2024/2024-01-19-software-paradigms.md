@@ -2,6 +2,7 @@
 layout: page
 title: Software Paradigms
 topic: CS
+category: CS
 ---
 
 Software Paradigms

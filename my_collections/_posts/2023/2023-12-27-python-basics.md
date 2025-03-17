@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Basics
-category: dev
+category: python
 ---
 
 I just came across what I think is a great book on Python called [Automate The Boring Stuff](https://automatetheboringstuff.com/2e/chapter1/) and so I thought I'd write up some notes as I read it, not because I don't understand basic programming, but because I don't always talk about programming with others, so a refresher in the *nomenclature* is important to me, as well as understanding some of the nuances of Python.

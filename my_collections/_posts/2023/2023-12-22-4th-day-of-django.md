@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 4th Day of Django
-category: dev
+category: django
 ---
 
 ### Review

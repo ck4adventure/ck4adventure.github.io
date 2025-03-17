@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enterprise Django
-category: dev
+category: django
 ---
 
 Dinder says a person could use git remotes to have three separate repos going. I find that overkill, three branches off the same repo is more than enough to cover dev/staging/prod. CI and/or Heroku is configurable enough to build those branches.

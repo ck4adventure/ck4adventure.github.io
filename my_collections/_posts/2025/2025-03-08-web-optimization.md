@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Optimization
-category: dev
+category: CS
 ---
 
 Came across an interview prep question which I hadn't thought about in a while:

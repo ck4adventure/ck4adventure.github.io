@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DBs and Apps in Prod
-category: dev
+category: django
 ---
 Woke up this morning feeling resolute. My month of taking it easy is over, time to really spend some hours coding and learning. Every time I have to log in to one of my fitness studios I am reminded how much of a gap is left in this market as well.
 

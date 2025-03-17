@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Testing with Jest
-category: dev
+category: js
 ---
 
 Spent some time this weekend getting tests set up for my latest feature, currently called 'chef' for lack of a better name. Not only do I want to keep up to speed on all the best practices for testing, I want to keep up to speed on different libraries. My picks are Mocha, Jest, and Cypress.

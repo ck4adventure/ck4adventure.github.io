@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Admin Panel and Static Files
-category: dev
+category: django
 ---
 Day 5 of learning Django :D
 

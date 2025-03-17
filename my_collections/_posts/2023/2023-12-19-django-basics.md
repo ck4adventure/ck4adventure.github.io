@@ -2,6 +2,7 @@
 layout: page
 title: Django Basics
 topic: django
+category: django
 ---
 
 ### Project Setup

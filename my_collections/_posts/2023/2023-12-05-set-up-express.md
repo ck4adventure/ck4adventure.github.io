@@ -2,6 +2,7 @@
 layout: page
 title: Set Up Express
 topic: express
+category: express
 ---
 
 ### Initial Setup

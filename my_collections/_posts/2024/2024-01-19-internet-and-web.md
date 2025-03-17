@@ -1,5 +1,6 @@
 ---
 topic: CS
+category: CS
 title: Basic Internet
 layout: page
 ---

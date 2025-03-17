@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Basics pt 2
-category: dev
+category: python
 ---
 
 ### Lists

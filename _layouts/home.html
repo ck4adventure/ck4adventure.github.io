@@ -13,7 +13,7 @@ layout: default
 	<div class="homepage-row">
   <div class="homepage-column">
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading"><a href="/posts">Latest Notes</a></h2>
+    <h2 class="post-list-heading"><a href="/posts">Latest Posts</a></h2>
     <ul class="post-list">
       {% assign dev_posts = site.posts | where: "category", "dev" %}
       {%- for post in dev_posts limit:3 -%}

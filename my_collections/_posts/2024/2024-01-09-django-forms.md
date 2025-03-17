@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Forms in Django
-category: dev
+category: django
 ---
 
 ### Weekend Review

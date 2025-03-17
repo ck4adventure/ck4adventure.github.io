@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Django Session
-category: dev
+category: django
 ---
 
 ### Creating the Project

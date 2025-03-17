@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Definitive Guide to Javascript
-category: dev
+category: js
 ---
 
 Started reading 'Javascript, The Definitive Guide' by David Flanigan straight through from the beginning. What's great is that I can read it so much more easily now, the first seven chapters at least were straightforward and mostly just affirming that I know what I should know. 
