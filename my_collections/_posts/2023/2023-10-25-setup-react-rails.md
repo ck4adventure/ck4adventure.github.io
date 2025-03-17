@@ -2,6 +2,7 @@
 layout: page
 title: React Setup
 topic: rails
+category: rails
 ---
 
 # With Rails 6

@@ -2,6 +2,7 @@
 layout: page
 title: Building JSON in Queries
 topic: pgsql
+category: sql
 ---
 Here are a few helpful things that I learned while working on my recipe app.
 

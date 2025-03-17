@@ -2,6 +2,7 @@
 layout: page
 title: PGSQL Docs part 2
 topic: pgsql
+category: sql
 ---
 
 ## PSQL Tables pt 2

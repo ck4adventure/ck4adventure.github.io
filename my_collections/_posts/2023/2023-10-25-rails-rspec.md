@@ -2,6 +2,7 @@
 layout: page
 title: RSpec
 topic: rails
+category: rails
 ---
 
 ## Rspec Reference

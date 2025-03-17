@@ -2,6 +2,7 @@
 layout: page
 title: CSS Cheatsheet
 topic: css
+category: css
 ---
 A basic css reset I got from my school and after trying a couple others, this one is still my preferred.
 

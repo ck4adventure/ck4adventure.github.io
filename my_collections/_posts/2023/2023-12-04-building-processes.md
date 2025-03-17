@@ -2,6 +2,7 @@
 layout: page
 title: Building Process
 topic: product
+category: "product design"
 ---
 
 I love being an entrepreneur. Below is a general overview of my product methodology.

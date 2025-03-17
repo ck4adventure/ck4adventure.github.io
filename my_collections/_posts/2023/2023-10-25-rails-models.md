@@ -2,6 +2,7 @@
 layout: page
 title: Rails Models
 topic: rails
+category: rails
 ---
 
 ## Models and Migrations

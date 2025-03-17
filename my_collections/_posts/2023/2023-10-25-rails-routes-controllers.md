@@ -2,6 +2,7 @@
 layout: page
 title: Routes and Controllers
 topic: rails
+category: rails
 ---
 
 ### Controllers and Routing

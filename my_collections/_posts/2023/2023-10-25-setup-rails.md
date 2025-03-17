@@ -2,6 +2,7 @@
 layout: page
 title: Rails Setup
 topic: rails
+category: rails
 ---
 
 ## New Rails Project

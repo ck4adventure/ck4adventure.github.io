@@ -2,6 +2,7 @@
 layout: page
 title: Older React Setup
 topic: rails
+category: rails
 ---
 
 # OLD React Framework on top of Rails Backend
