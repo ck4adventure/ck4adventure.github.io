@@ -1,7 +1,7 @@
 ---
 layout: post
 title: golang revisited
-category: go
+category: golang
 ---
 
 My book is showing its age, `go get` has been deprecated.
