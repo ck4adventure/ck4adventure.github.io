@@ -14,7 +14,7 @@ A sub-paradigm is `procedural programming`, where code is organized into procedu
 
 Running a loop that reads a value from the array and updates a total sum is an example of imperative programming.
 
-### OOP
+### Object Oriented Programming
 In object oriented programming, objects contain both `state` and `methods`.
 
 A racecar class might inherit from a vehicle class the start and drive methods, but have its own method called makePitStop. 
