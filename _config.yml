@@ -32,7 +32,7 @@ collections_dir: my_collections
 collections:
   recipes:
     output: true
-  tech_notes:
+  sheets:
     output: true
 
 # Build settings

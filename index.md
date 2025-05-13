@@ -5,17 +5,11 @@
 layout: home
 ---
 
-<br>
-A thoughtful, creative mid-level developer proficient in front- and back-end development. 
-
-<br>
-
-
 <h3 class="post-list-heading">Code Projects</h3>
 
 <div class="preview-container">
 <img src="images/recipe_manager_new_recipe.png" alt="New Recipe Form" width="100" height="100">
-<p>Deployment Coming Soon! &nbsp;<b>Recipe Manager</b>, an app to help me manage the ingredients and labeling for my weekend home bakery business. First feature includes database relations of a product which has many recipes, with each recipe having many ingredients, each ingredient with a list of one or many ingredients, and possibly its own recipe. Main goal is to simplify the printing of ingredient labels and allergen warnings for my bakery products.<a href="https://github.com/ck4adventure/recipe_app_nextjs">&nbsp;github</a></p>
+<p>POC project &nbsp;<b>Recipe Manager</b>, an app to help me manage the ingredients and labeling for my weekend home bakery business. First feature includes database relations of a product which has many recipes, with each recipe having many ingredients, each ingredient with a list of one or many ingredients, and possibly its own recipe. Main goal was to simplify the printing of ingredient labels and allergen warnings for my bakery products.<a href="https://github.com/ck4adventure/recipe_app_nextjs">&nbsp;github only</a></p>
 </div>
 
 <div  class="preview-container">
